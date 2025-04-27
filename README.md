@@ -1,6 +1,6 @@
 # Bynote Space
 
-Hi, introducing Bynote! 🌻. https://bynote.space 
+Hi, introducing Bynote! 🌻. https://bynote-20d38.web.app/#/
 
 . 
 Bynote is a cross-platform app (Web-App) that let you to write your To-dos, draw or write a Note, set and push your productivity with Pomodoro technique. 

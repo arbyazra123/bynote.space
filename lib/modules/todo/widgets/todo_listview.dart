@@ -84,7 +84,8 @@ class TodoListView extends StatelessWidget {
           }
           return element;
         }).toList();
-        if (todoProvider.allTodoMode.index == 1 && todoProvider.mode==TodoMode.all) {
+        if (todoProvider.allTodoMode.index == 1 &&
+            todoProvider.mode == TodoMode.all) {
           calendarProvider.staticCheckUpdate(!checked, index);
         } else {}
         context.read<UpdateTodoCubit>().checkTodo(data.id, !checked);
@@ -96,7 +97,8 @@ class TodoListView extends StatelessWidget {
               .read<GetTodoBloc>()
               .result
               .removeWhere((element) => element.id == data.id);
-          if (todoProvider.allTodoMode.index == 1 && todoProvider.mode==TodoMode.all) {
+          if (todoProvider.allTodoMode.index == 1 &&
+              todoProvider.mode == TodoMode.all) {
             calendarProvider.staticRemove(index);
           } else {}
           context.read<UpdateTodoCubit>().deleteTodo(data.id);
@@ -126,9 +128,10 @@ class TodoListView extends StatelessWidget {
                     }).toList();
                     context.read<UpdateTodoCubit>().checkTodo(data.id, v);
                   },
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(2),
-                      side: BorderSide(color: Colors.white, width: 0.5)),
+                  // shape: RoundedRectangleBorder(
+                  //   borderRadius: BorderRadius.circular(2),
+                  //   side: BorderSide(color: Colors.white, width: 0.5),
+                  // ),
                   checkColor: Colors.white,
                   activeColor: Colors.pink,
                 ),

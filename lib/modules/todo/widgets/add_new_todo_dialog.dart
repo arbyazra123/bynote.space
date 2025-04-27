@@ -128,10 +128,11 @@ class _AddNewTodoDialogState extends State<AddNewTodoDialog> {
                                     .read<AddNewTodoCubit>()
                                     .onImprotantChanged(!state.isImportant);
                               },
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(2),
-                                  side: BorderSide(
-                                      color: Colors.white, width: 0.5)),
+                              // shape: RoundedRectangleBorder(
+                              //   borderRadius: BorderRadius.circular(2),
+                              //   side:
+                              //       BorderSide(color: Colors.white, width: 0.5),
+                              // ),
                               checkColor: Colors.white,
                               activeColor: Colors.pink,
                             ),
